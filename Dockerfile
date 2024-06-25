@@ -10,7 +10,7 @@ RUN apk add chromium
 RUN apk add npm
 RUN npm install -g mermaid-filter 
 
-# install Uubuntu LaTeX font
+# install Ubuntu LaTeX font
 RUN apk add curl unzip make
 WORKDIR /tmp
 RUN curl -L -o ubuntu-latex-fonts.zip https://github.com/tzwenn/ubuntu-latex-fonts/archive/refs/heads/master.zip
